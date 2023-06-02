@@ -1,3 +1,2 @@
-# portafolioWebMagucho6.github.io
-web portfolio that implements the projects and experience acquired within the framework of programming.
+<h1>Portfolio web Magucho</h1>
 https://magucho.github.io/portafolioWebMagucho6.github.io/
