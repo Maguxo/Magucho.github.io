@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #1d1f20;
+}
+.root{
+    background-color: #1d1f20;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cabezon{
+     max-width: 100%;
+     display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.menu1{
+    margin: auto 450% 20px;  
+     margin-right: auto;
+     position: relative;
+     display: grid;
+     grid-template-columns: repeat(5,1fr);
+     gap: 10px;
+     align-items: center;
+}
+a{
+    text-decoration: none;
+    width: 50px;
+    height: 48px;
+    line-height: 76px;
+    text-align: center;
+    background: #1d1f20;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px;
+    transition: all .4s ease-in-out;
+    outline: 4px solid #3e4244;
+}
+a:hover{
+    transform: scale(1.2);
+    background: #40e0d0;
+    outline: 4px solid #1d1f20;
+}
+img.ima{
+    width: 36px;
+    height: 36px;
+}
+nav.menu{
+     display: flex;
+     background: #1d1f20;
+     align-items: flex-end;
+     width: 400px;
+     height: 10vh;
+     justify-content: space-around;
+     align-items: center;
+     overflow: hidden;  
+}
+.marcaprincipal{
+    width: 97%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.marcaSegundaria{
+    width: 120px;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.marcaSegindaria, .logoMagucho{
+    width: 220px;
+    height: 140px;
+    transition-duration: .3s;
+    overflow: clip;
+    transition: 3s;
+    clip-path: polygon(36% 28.4%, 64.1% 28.4%, 64.1% 73%, 36% 73%); 
+    background:#1d1f20;
+}
+.logoMagucho:hover{
+    position: relative;
+     margin: 0 auto;
+    color: turquoise;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:radial-gradient(#40e0d0 1rem, #1d1f20 20%);
+    border: 1px solid;
+    transform: scale(1.20);
+}
+.padre{
+   width: 100%;
+   position: relative;
+   padding: 0%;
+
+}
+.container{
+    position: absolute;
+}
+.row{
+    display: inline-flex;
+    margin-top: -22px;
+    margin-left: -36px;
+}
+.row:nth-child(even){
+    margin-left: 2px;
+}
+.panal{
+    width: 73.5px;
+    height: 72px;
+    margin: 1px;
+    background-color: black;
+    clip-path: polygon(50% 0,100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    animation: rueda 4s linear infinite;
+    transition: 6s;
+}
+.panal:hover{
+    background-color: #40e0d0;
+    transition: 0s ;
+}
+@keyframes rueda{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(0deg);
+    }
+}
+.panal::after{
+    content:'';
+    position: absolute;
+    top: 3px;
+    bottom: 3%;
+    left: 3px;
+    right: 3px;
+    background-color: black;
+    clip-path: polygon(50% 0,100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.panal:before{
+  content:'';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: rgb(255,255,255,0.03);
+  z-index: 6;
+}
+.hijo{
+    position: relative;
+    background: rgb(17, 16, 17);
+    width: 400px;
+    height: 700px;
+    margin: 0 auto;
+    border-radius: 5%;
+}
+.foto{
+    width: 400px;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.hexagono{
+    position: relative;
+    width: 200px;
+    height: 250px;
+    margin: 20px 6rem;
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%,50% 100%, 0 75%);
+    background: linear-gradient(rgb(55, 124, 253),rgb(132, 168, 236));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.nombre{
+    font-family: 'Incosolata', Consolas, monospace;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+button{
+    position: relative;
+    padding: 0px 10px;
+    border: none;
+    outline: none;
+    background: #1d1f20;
+    letter-spacing: 10px;
+    color: #40e0d0;
+    cursor: pointer;
+    margin-left: 24%;
+    margin-top: 30%;
+    transition: .5s;
+    overflow: hidden;
+}
+.linCV{
+    border-radius: 0%;
+    outline: #1d1f20;
+    box-shadow: 2px 2px 5px #1d1f20;
+    color:aliceblue;
+    line-height: 66px;
+}.linCV:hover{
+    background:#1d1f20;
+    outline: 1px solid #1d1f20;
+    color: #40e0d0;
+}
+button:hover{
+    transform: scale(0.6);
+}
+button span{
+    position: absolute;
+    background: #40e0d0;
+    transition: .5s;
+}
+button span:nth-child(1){
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: -100%;
+
+}button span:nth-child(2){
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: -100%;
+    
+}button span:nth-child(3){
+    width: 1px;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+    
+}button span:nth-child(4){
+    width: 1px;
+    height: 100%;
+    top: -100%;
+    right: 0;
+    
+}button:hover span:nth-child(1){
+    left: 0;
+
+}button:hover span:nth-child(2){
+    right: 0;
+}button:hover span:nth-child(3){
+    bottom: 0;
+}button:hover span:nth-child(4){
+    top: 0;
+}.backend::after{
+    content: '|';
+    position: absolute;
+    right: 0px;
+    color: white;
+    background-color:rgb(17, 16, 17) ;
+    width: 72%;
+    animation: typing 6s steps(16) alternate infinite, 
+               retroceso 0.6s infinite;           
+}
+@keyframes typing{
+    to{
+        width: 3%;
+    }
+}
+@keyframes retroceso{
+    50%{
+        color: transparent;
+    }
+}
+footer{
+    display: flex;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+.logoInferior{
+    width: 200px;
+    border-radius: 15%;
+    background:radial-gradient(#40e0d0 1rem, #1d1f20 70%);
+    margin-left: 8%;   
+}
+.derechos{
+    margin-left: -5%;
+   font-weight: bold; 
+}
+
+@media screen and (max-width:480px){
+    .marcaprincipal{
+        width: 37%;
+        padding-right: 2px;
+        padding-left: 2px;
+        margin-left: 6px;
+        margin-right: auto;
+    }
+    .marcaSegundaria{
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        margin-left: -6px;
+    }
+    .marcaSegindaria,.logoMagucho{
+        width: 140px;
+        height: 130px;
+        transition-duration:.3s;
+        overflow: clip;
+        transition: 3s;
+        clip-path: polygon(36% 28.4%, 64.1% 28.4%, 64.1% 73%, 36% 73%); 
+        background:#1d1f20;
+    }
+    nav.menu{
+        display: flex;
+        background: #1d1f20;
+        align-items: flex-end;
+        width: 300px;
+        height: 10vh;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;  
+   }
+    .menu1{
+        margin: auto 0px 9px;  
+         margin-right: auto;
+         position: relative;
+         display: grid;
+         grid-template-columns: repeat(5,1fr);
+         gap: 10px;
+         align-items: center;
+    }
+    img.ima{
+        width: 30px;
+        height: 30px;
+    }
+    
+    a{
+        text-decoration: none;
+        width: 40px;
+        height: 38px;
+        line-height: 56px;
+        text-align: center;
+        background: #1d1f20;
+        border-radius: 50%;
+        box-shadow: 2px 2px 5px;
+        transition: all .4s ease-in-out;
+        outline: 4px solid #3e4244;
+    }
+   .panal{
+    width: 23.5px;
+    height: 72px;
+    margin: 1px;
+    background-color: black;
+    clip-path: polygon(50% 0,100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    animation: rueda 4s linear infinite;
+    transition: 6s;
+   }
+   .row{
+    display: inline-flex;
+    margin-top: -22px;
+    margin-left: 15px;
+}
+}
