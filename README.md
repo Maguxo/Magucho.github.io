@@ -4,7 +4,6 @@
    <head >
      <h1 align=center>Portfolio Page</h1>
    </head>
-    <body>
-      
+     <body>
      </body>
 </html>
