@@ -290,3 +290,77 @@ footer{
     margin-left: -5%;
    font-weight: bold; 
 }
+@media screen and (max-width:480px){
+    .marcaprincipal{
+        width: 37%;
+        padding-right: 2px;
+        padding-left: 2px;
+        margin-left: 6px;
+        margin-right: auto;
+    }
+    .marcaSegundaria{
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        margin-left: -6px;
+    }
+    .marcaSegindaria,.logoMagucho{
+        width: 140px;
+        height: 130px;
+        transition-duration:.3s;
+        overflow: clip;
+        transition: 3s;
+        clip-path: polygon(36% 28.4%, 64.1% 28.4%, 64.1% 73%, 36% 73%); 
+        background:#1d1f20;
+    }
+    nav.menu{
+        display: flex;
+        background: #1d1f20;
+        align-items: flex-end;
+        width: 300px;
+        height: 10vh;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;  
+   }
+    .menu1{
+        margin: auto 0px 9px;  
+         margin-right: auto;
+         position: relative;
+         display: grid;
+         grid-template-columns: repeat(5,1fr);
+         gap: 10px;
+         align-items: center;
+    }
+    img.ima{
+        width: 30px;
+        height: 30px;
+    }
+    
+    a{
+        text-decoration: none;
+        width: 40px;
+        height: 38px;
+        line-height: 56px;
+        text-align: center;
+        background: #1d1f20;
+        border-radius: 50%;
+        box-shadow: 2px 2px 5px;
+        transition: all .4s ease-in-out;
+        outline: 4px solid #3e4244;
+    }
+   .panal{
+    width: 23.5px;
+    height: 72px;
+    margin: 1px;
+    background-color: black;
+    clip-path: polygon(50% 0,100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    animation: rueda 4s linear infinite;
+    transition: 6s;
+   }
+   .row{
+    display: inline-flex;
+    margin-top: -22px;
+    margin-left: 15px;
+}
+}
