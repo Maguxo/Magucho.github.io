@@ -8,7 +8,6 @@
 
  
 
-
 https://github.com/Magucho/Magucho.github.io/assets/98346054/a08dd6c7-1290-4751-9a55-367460ac30de
 
 
